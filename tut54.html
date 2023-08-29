@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction using alert,confirm and prompt</title>
+</head>
+<body>
+    This is a page
+    <script>
+        // Alert in in-browser JavaScript - Does not return anything
+        // alert("This is a message"); 
+
+        // Prompt in JS
+        // let age=confirm('Are you 18+ old?')
+        // if (age) {
+        //     console.log('You are welcome in the club!')
+        // } else {
+        //     console.log('Sorry! You are not allowed.')
+        // }        
+        let age=prompt('Are you 18+ old?','Guest')
+       console.log(age)
+    //     Code to delete the post
+        if (age=='yes') {
+            console.log('You are welcome in the club!')
+        } 
+          // Code to cancel deletion of the post
+        else{
+            console.log('Sorry! You are not allowed.')
+        }        
+        
+let age = prompt("Please enter your Age", "18");
+if (age < 18) {
+            alert("You cannot enter the club");
+        } 
+else {
+            alert("You can enter the club");
+        }
+    </script>
+</body>
+</html>

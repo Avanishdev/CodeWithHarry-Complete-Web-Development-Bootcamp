@@ -1,0 +1,186 @@
+// console.log('Hello World');
+const http = require('http');
+
+const hostname = '127.0.0.1';
+const port = 3000;
+
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/html');
+  res.end(`<!-- PROJECT 1 -->
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Creating a gym website</title>
+      <link rel="stylesheet" href="tut2.css">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+      <style>
+  body{
+      font-family: 'Baloo Bhai 2', cursive;
+      color: white;
+      margin: 0px;
+      padding: 0px;
+      background: url('https://images.pexels.com/photos/416809/pexels-photo-416809.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+  }
+  .left{
+      /* border: 2px solid red; */
+      display: inline-block;
+      position: absolute;
+      top: 34px;
+      left: 34px;
+      
+      
+  }
+  .mid{
+      /* border: 2px solid rgb(17, 19, 17); */
+      display: block;
+      margin: 34px auto;
+      width: 45%;
+      background-color: rgb(134, 24, 24);
+      border-radius: 10px;
+  }
+  .right{
+      display: inline-block;
+      position: absolute;
+      top: 34px;
+      right: 34px;
+      /* border: 2px solid yellow; */
+      
+  }
+  .navbar {
+      display: inline-block;
+     
+  }
+  
+     
+  .navbar li{ 
+      display: inline-block;
+  
+      list-style: none;
+  
+  } 
+  .navbar li a{
+      color: white;
+      padding: 6px 3px;
+      text-decoration: none;
+  }
+  .navbar li a:hover,.navbar li a.active {
+     color:burlywood;
+     text-decoration: underline;
+  }
+  .btn{
+      font-size: 13px;
+      font-family: 'Baloo Bhai 2', cursive;
+      margin: 4px 3px;
+      padding: 2px 4px;
+      cursor: pointer;
+      border: 3px solid grey;
+      border-radius: 10px;
+  }
+  .btn:hover{
+   background-color: rgb(245, 99, 73);
+   }
+  img{
+  /* display: inline-block; */
+  filter: invert(100%);
+      width: 136px;
+  
+     
+  
+  }
+  
+  .left div{
+      text-align: center;
+      font-size: 24px;
+      line-height: 33px;
+  }
+  .left div:hover{
+      color: rosybrown;
+  }
+  .container{
+      border: 2px solid rgb(238, 225, 225);
+      border-radius: 10px;
+      width: 145px;
+      margin: 123px 123px;
+      padding: 66px;
+      background-color: black;
+  
+     
+  }
+  #formsub{
+   display: inline-block;
+   width: 163px;
+   margin: auto;
+  
+      
+  }
+  /* .form-group input {
+          font-family: 'Baloo Bhai', cursive;
+          text-align: center;
+          display: block;
+          width: 508px;
+          padding: 1px;
+          border: 2px solid black;
+          margin: 11px auto;
+          font-size: 25px;
+          border-radius: 8px;
+      }
+  
+      .container h1 {
+          text-align: center;
+      }
+  
+      .container button {
+          display: block;
+          width: 74%;
+          margin: 20px auto;
+      } */
+      </style>
+  </head>
+  <body>
+      
+      <header class="header">
+          <div class="left">
+              <img src="https://tse2.mm.bing.net/th?id=OIP.OBxGI_N9if7gc4s-iB4WOQHaHa&pid=Api&P=0&w=300&h=300"  alt="">
+              <div>MY Fitness</div>
+          </div>
+          <div class="mid">
+  <ul class="navbar">
+    <li><a href="#" class="active">Home</a>   </li>
+    <li><a href="#">Services</a>   </li>
+    <li><a href="#">Fitness calculator</a>   </li>
+    <li><a href="#">Contact us</a>   </li>
+    
+      
+  </ul>
+          </div>
+          <div class="right">
+  <button class="btn">Call us now</button>
+  <button class="btn">Emailus</button>
+          </div>
+      </header>
+      <div class="container">
+        
+              <h3>Best gym for you</h3>
+              <div class="forminput">
+                  <form action="noaction.php">
+         <input type=" text" name="text" placeholder="Enter your name">
+         <input type=" text" name="text" placeholder="Enter your phone num">
+         <input type=" text" name="text" placeholder="Enter your address">
+         <input type=" text" name="text" placeholder="Enter your email address"></div>
+         <button type="submit" class="btn" id="formsub">Submit</button>
+      </form>
+      </div>
+  
+  </body>
+  </html>
+`);
+});
+
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors and styling links</title>
+    <style>
+        a:hover {
+            background-color: lavenderblush;
+            border: 3px solid grey;
+
+        }
+
+        a:active {
+            background-color: rgb(236, 17, 127);
+        }
+
+        a:visited {
+            background-color: rgb(88, 97, 233);
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .container {
+            border: 3px solid grey;
+            padding: 13px;
+            margin: 14px auto;
+            width: 666px;
+            background-color: rgb(243, 183, 213);
+        }
+
+        .btn {
+            padding: 4px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            background-color: lavender;
+            border: none;
+            cursor: pointer;
+            font-size: 13px;
+            border-radius: 4px;
+        }
+
+        .btn:hover {
+            background-color: lightcoral;
+            color: rgb(19, 18, 18);
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>This is heading</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat repudiandae sunt quidem itaque ad porro quo
+            delectus minima quisquam fugiat magni aperiam odio labore, illum qui nesciunt dolore voluptate soluta
+            impedit modi neque debitis.</p>
+        <a class="btn" href="http://google.com">Read more</a>
+        <button class="btn">Contact us</button>
+
+    </div>
+</body>
+
+</html>

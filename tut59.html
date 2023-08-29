@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Date and time</title>
+    <style>
+.container{
+    border: 2px solid grey;
+    background-color: blanchedalmond;
+    text-align: center;
+    margin: 4px;
+    padding: 24px;
+    
+
+}
+#time{
+    font-weight: bold
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        Time Now is <span id="time"></span>
+        Current Time is <span id="date"></span>
+    </div>
+    <script>
+        setInterval(updatetime,1000)
+        function updatetime() {
+            time.innerHTML=new Date()
+        }
+        date=document.getElementById('date').innerHTML=new Date()
+        console.log(date);
+    </script>
+</body>
+</html>

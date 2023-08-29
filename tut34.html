@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+       .box{
+        border: 2px solid red;
+        padding: 23px 13px;
+        background-color: rosybrown;
+
+        /* box-shadow: 10px 10px green; */
+        /* box-shadow: -10px -10px green; */
+
+        /* box-shadow: 10px 10px 6px green ; */
+
+        /* box-shadow: 10px 10px 4px 34px green; */
+        /* box-shadow: 10px 10px 4px 34px rgba(12, 13, 14, 0.5); */
+        
+        box-shadow: inset 10px 10px red;
+        
+        box-shadow: 10px 10px red , 5px 6px green;
+
+        }
+        .box h1{
+            text-shadow: 7px 6px white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box-1">
+            <h1>card1</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae quasi alias recusandae? Necessitatibus
+                nesciunt veritatis earum rem accusamus possimus at eum accusantium pariatur vitae. Tempore ipsam ad
+                natus laboriosam, rerum molestiae mollitia nemo? Nemo!</p>
+        </div>
+        <div class="box" id="box-2">
+            <h1>card2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo qui architecto natus eius recusandae
+                quas, autem, illo, quaerat perspiciatis saepe cum voluptatum. Soluta illo eligendi unde autem facere
+                officia! Vero voluptatum quisquam beatae quis?</p>
+        </div>
+        <div class="box" id="box-3">
+            <h1>card3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet et eos facilis dolorum ducimus
+                ipsa! Minus reiciendis ullam reprehenderit dolores itaque quisquam nostrum esse eum sapiente,
+                dignissimos, deserunt blanditiis, nam error harum deleniti!</p>
+        </div>
+    </div>
+</body>
+
+</html>
